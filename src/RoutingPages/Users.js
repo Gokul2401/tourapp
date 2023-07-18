@@ -10,6 +10,8 @@ import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 import UserBar from '../components/UserBar/Userbar'
 import Places from '../components/Places/Places';
+import GettingPlaces from '../components/Places/GettingPlaces'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -85,7 +87,7 @@ export default function FullWidthTabs() {
                 <Places />
             </TabPanel>
             <TabPanel value={value} index={1} dir={theme.direction}>
-              Item Two
+              <GettingPlaces />
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
               Item Three
